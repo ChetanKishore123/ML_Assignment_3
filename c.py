@@ -9,9 +9,7 @@ import numpy as np
 
 np.random.seed(1234)
 
-st.title("Hierarchical Clustering")
-
-st.write("Create a slider for each step in hierarchical clustering of unsupervised data. Use the sklearn.datasets make_blobs function to create the dataset and visualize the predictions using a changing voronoi diagram.")
+st.title("ROC Curve for Imbalance dataset")
 
 weight = st.sidebar.slider("imbalance ratio", min_value=0.1, max_value=0.9)
 
