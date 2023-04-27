@@ -49,6 +49,10 @@ def plot_roc_curve(test_y, naive_probs, model_probs):
     # show the plot
     plt.show()
 
+
+fig = plt.plot()
+
+
 # Create slider widget for the weights parameter
 weight_slider = st.sidebar.slider(min=0, max=0.99, step=0.1, value=0.5, description='Weight:')
 # Define function to update the plot when the slider value changes
@@ -57,3 +61,4 @@ def update_plot(change):
     generate_dataset_and_roc_auc(weight)
 # Register the update_plot function to be called when the slider value changes
 weight_slider.observe(update_plot, 'value')
+st.pyplot(fig)
