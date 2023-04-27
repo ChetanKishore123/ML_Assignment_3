@@ -47,4 +47,5 @@ fig = plt.plot()
 
 # plt.box(False)
 # plt.show()
+st.set_option('deprecation.showPyplotGlobalUse', False)
 st.pyplot(fig)
